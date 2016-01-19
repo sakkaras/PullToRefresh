@@ -21,7 +21,7 @@ class ViewController: UIViewController {
             let delayTime = dispatch_time(DISPATCH_TIME_NOW,
                 Int64(2 * Double(NSEC_PER_SEC)))
             dispatch_after(delayTime, dispatch_get_main_queue()) {
-                self?.tableView.endRefreshing()
+//                self?.tableView.endRefreshing()
             }
         })
     }

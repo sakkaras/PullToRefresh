@@ -193,12 +193,13 @@ class DefaultRefreshView: UIView {
     }
     
     private func commonInit() {
-        frame = CGRectMake(frame.origin.x, frame.origin.y, frame.width, 40)
+        frame = CGRectMake(frame.origin.x, frame.origin.y, frame.width, 80)
     }
     
     override func layoutSubviews() {
         if (activicyIndicator == nil) {
-            activicyIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.Gray)
+            activicyIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.White)
+            activicyIndicator.color = UIColor(red: 247.0 / 255.0, green: 126.0 / 255.0, blue: 40.0 / 255.0, alpha: 1.0)
             activicyIndicator.hidesWhenStopped = true
             addSubview(activicyIndicator)
         }
@@ -214,7 +215,7 @@ class DefaultRefreshView: UIView {
     
     private func setupFrameInSuperview(newSuperview: UIView?) {
         if let superview = newSuperview {
-            frame = CGRectMake(frame.origin.x, frame.origin.y, superview.frame.width, 40)
+            frame = CGRectMake(frame.origin.x, frame.origin.y, superview.frame.width, 80)
         }
     }
     
