@@ -19,7 +19,7 @@ public class PullToRefresh: NSObject {
     
     public var hideDelay: NSTimeInterval = 0
 
-    let refreshView: UIView
+    public let refreshView: UIView
     var action: (() -> ())?
     
     private let animator: RefreshViewAnimator
