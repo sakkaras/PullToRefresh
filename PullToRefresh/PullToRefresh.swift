@@ -149,6 +149,14 @@ public class PullToRefresh: NSObject {
             state = .Finished
         }
     }
+    
+    func isRefreshing() -> Bool {
+        if state == .Loading {
+            return true
+        }
+    
+        return false
+    }
 }
 
 // MARK: - State enumeration

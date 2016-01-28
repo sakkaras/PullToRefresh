@@ -49,4 +49,12 @@ public extension UIScrollView {
     func endRefreshing() {
         pullToRefresh?.endRefreshing()
     }
+    
+    func isRefreshing() -> Bool {
+        if let pullToRefresh = pullToRefresh {
+            return pullToRefresh.isRefreshing()
+        }
+        
+        return false
+    }
 }
