@@ -207,7 +207,7 @@ class DefaultRefreshView: UIView {
     override func layoutSubviews() {
         if (activicyIndicator == nil) {
             activicyIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.White)
-            activicyIndicator.color = UIColor(red: 247.0 / 255.0, green: 126.0 / 255.0, blue: 40.0 / 255.0, alpha: 1.0)
+            activicyIndicator.color = UIColor(red: 142.0 / 255.0, green: 68.0 / 255.0, blue: 173.0 / 255.0, alpha: 1.0)
             activicyIndicator.hidesWhenStopped = true
             addSubview(activicyIndicator)
         }
